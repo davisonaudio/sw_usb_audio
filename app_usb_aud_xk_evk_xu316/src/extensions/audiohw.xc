@@ -330,3 +330,7 @@ void AudioHwConfig(unsigned samFreq, unsigned mClk, unsigned dsdMode,
     write_node_config_reg(tile[0], XS1_SSWITCH_SS_APP_CLK_DIVIDER_NUM, APP_PLL_DIV);
 }
 
+extern void UserBufferManagement(unsigned sampsFromUsbToAudio[], unsigned sampsFromAudioToUsb[])
+{
+    sampsFromAudioToUsb[0] = sampsFromUsbToAudio[0];
+}

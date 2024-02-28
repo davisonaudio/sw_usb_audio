@@ -5,6 +5,8 @@
 #ifdef __XC__
 void AudioHwRemote(chanend c);
 
+
+
 extern unsafe chanend uc_audiohw;
 
 #define USER_MAIN_DECLARATIONS chan c_audiohw;
@@ -26,4 +28,8 @@ extern unsafe chanend uc_audiohw;
                                     }
 #endif
 
+
+
 #endif
+
+
